@@ -1,0 +1,54 @@
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+
+/* Global */
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+
+/* Header */
+
+header {
+
+  .header_logo {
+    width: 300px;
+  }
+
+  .nav_bar {
+
+    display: flex;
+    justify-content: space-between;
+    border-top: 1px solid #e1e1e1;
+    
+    .nav_links {
+      display: flex;
+    }
+  }
+}
+
+
+
+/* Front page */
+
+
+.banner {
+  background: url("../../assets/images/hero-bread.jpg")
+  no-repeat center top;
+  margin: 0 auto;
+  text-align: center;
+  height: 550px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  
+  .banner-text {
+    color: white;
+    font-family: $font__accent, serif;
+    font-size: 6rem;
+    text-transform: uppercase;
+  }
+
+}
