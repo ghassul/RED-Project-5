@@ -1,7 +1,9 @@
 <?php
 /**
- * Created by PhpStorm.
- * User: Blaze
- * Date: 2015-11-02
- * Time: 1:39 PM
+ * The template for displaying all taxonomies.
+ *
+ * @package RED_Starter_Theme
  */
+get_header(); ?>
+
+<h1>Hello World</h1>

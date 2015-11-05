@@ -31,7 +31,6 @@ function lrb_product_post_type() {
         'description'         => __( 'Le Red Bread\'s products', 'text_domain' ),
         'labels'              => $labels,
         'supports'            => array( 'title', 'editor', 'author', 'thumbnail', 'revisions', ),
-//        'taxonomies'          => array( 'category', 'post_tag' ),
         'hierarchical'        => false,
         'public'              => true,
         'show_ui'             => true,

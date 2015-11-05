@@ -1,0 +1,78 @@
+
+.site-footer {
+  background-color: #222;
+
+  
+  .company_info {
+    display: flex;
+    justify-content: space-between;
+    padding: 3rem 0;
+
+    h3 {
+      font-size: 1.2rem;
+      font-family: $font__accent;
+      margin: 0 0 0.75rem;
+      color: grey;
+      text-transform: uppercase;
+    }
+
+    i {
+      font-size: 1.25rem;
+      margin-right: 0.5rem;
+      color: white;
+    }
+
+    p {
+      margin: 0 0 0.5rem ;
+      color: white;
+
+      i {
+        margin-right: 0.3rem;
+      }
+
+      span {
+        font-weight: bold;
+      }
+    }
+
+
+    .contact {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+
+      a {
+        color: white;
+        text-decoration: none;
+      }
+      
+      a:hover {
+        text-decoration: underline;
+      }
+    }
+
+
+    .footer_logo {
+      width: 250px;
+    }
+
+    .hours {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+    }
+  }
+
+
+  .copyright_container {
+    background-color: #333;
+    text-align: center;
+    padding: 1.5rem 0;
+
+    p {
+      font-size: 0.8rem;
+      margin: 0;
+      color: white;
+    }
+  }
+}

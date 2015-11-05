@@ -46,3 +46,22 @@ function leredbread_login_title(){
 }
 
 add_filter('login_headertitle', 'leredbread_login_title');
+
+
+/**
+ * Filter the Product post type archive.
+ */
+function lrb_modify_archive_queries( $query ) {
+    if ( is_post_type_archive( array( 'product' ) ) && !is_admin() && $query->is_main_query() ) {
+        $query->set( 'orderby', 'title' );
+        $query->set( 'order', 'ASC' );
+        $query->set( 'posts_per_page', 12 );
+    } elseif ( $query->is_tax( 'product-type' ) && !is_admin() && $query->is_main_query() ) {
+        $query->set( 'orderby', 'title' );
+        $query->set( 'order', 'ASC' );
+    } elseif ( is_post_type_archive( array( 'testimonial' ) ) && !is_admin() && $query->is_main_query() ) {
+        $query->set( 'orderby', 'title' );
+        $query->set( 'order', 'ASC' );
+    }
+}
+add_action( 'pre_get_posts', 'lrb_modify_archive_queries' );

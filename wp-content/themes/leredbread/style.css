@@ -708,15 +708,6 @@ object {
 .gallery-caption {
   display: block; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
-/* Global */
-.container {
-  width: 1024px;
-  margin: 0 auto; }
-
-/* Header */
 .site-header {
   padding-top: 2.25rem;
   background-color: #fafafa; }
@@ -808,8 +799,79 @@ object {
             font-size: 1rem;
             color: #808080; }
 
+.site-footer {
+  background-color: #222; }
+  .site-footer .company_info {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    padding: 3rem 0; }
+    .site-footer .company_info h3 {
+      font-size: 1.2rem;
+      font-family: "overlock", serif;
+      margin: 0 0 0.75rem;
+      color: grey;
+      text-transform: uppercase; }
+    .site-footer .company_info i {
+      font-size: 1.25rem;
+      margin-right: 0.5rem;
+      color: white; }
+    .site-footer .company_info p {
+      margin: 0 0 0.5rem;
+      color: white; }
+      .site-footer .company_info p i {
+        margin-right: 0.3rem; }
+      .site-footer .company_info p span {
+        font-weight: bold; }
+    .site-footer .company_info .contact {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+      .site-footer .company_info .contact a {
+        color: white;
+        text-decoration: none; }
+      .site-footer .company_info .contact a:hover {
+        text-decoration: underline; }
+    .site-footer .company_info .footer_logo {
+      width: 250px; }
+    .site-footer .company_info .hours {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-flex-direction: column;
+          -ms-flex-direction: column;
+              flex-direction: column;
+      -webkit-justify-content: center;
+          -ms-flex-pack: center;
+              justify-content: center; }
+  .site-footer .copyright_container {
+    background-color: #333;
+    text-align: center;
+    padding: 1.5rem 0; }
+    .site-footer .copyright_container p {
+      font-size: 0.8rem;
+      margin: 0;
+      color: white; }
+
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
+/* Global */
+.container {
+  width: 1024px;
+  margin: 0 auto; }
+
 /* Front page */
-.banner {
+.front-page .banner {
   background: url("../../assets/images/hero-bread.jpg") no-repeat center top;
   margin: 0 auto;
   text-align: center;
@@ -823,8 +885,82 @@ object {
   -webkit-justify-content: center;
       -ms-flex-pack: center;
           justify-content: center; }
-  .banner .banner-text {
+  .front-page .banner .banner-text {
     color: white;
     font-family: "overlock", serif, serif;
     font-size: 6rem;
-    text-transform: uppercase; }
+    text-transform: uppercase;
+    text-shadow: 2px 1px 2px rgba(100, 100, 100, 0.75); }
+
+.front-page .product-information .product-type {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  list-style: none;
+  padding: 0;
+  margin: 0 0 3rem; }
+  .front-page .product-information .product-type .product {
+    width: 22%; }
+    .front-page .product-information .product-type .product img {
+      display: block;
+      width: 80%;
+      margin: 0 auto; }
+
+.front-page .latest-news {
+  background-color: #fafafa;
+  border-bottom: 1px solid #e1e1e1;
+  border-top: 1px solid #e1e1e1;
+  padding: 3rem 0;
+  margin-bottom: 3rem; }
+  .front-page .latest-news div .news-heading {
+    text-transform: uppercase;
+    color: #333;
+    font-family: "overlock", serif;
+    font-size: 1.8rem;
+    margin-bottom: 2.25rem;
+    text-align: center; }
+  .front-page .latest-news div .news-container {
+    list-style: none;
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-between;
+        -ms-flex-pack: justify;
+            justify-content: space-between;
+    margin: 0 0 1.5rem 0;
+    padding: 0;
+    box-shadow: 0 0 3px rgba(100, 100, 100, 0.25); }
+    .front-page .latest-news div .news-container .news {
+      max-width: 25%;
+      background-color: white;
+      border: 1px solid #e1e1e1; }
+      .front-page .latest-news div .news-container .news .thumbnail-wrapper {
+        height: 200px;
+        overflow: hidden;
+        position: relative; }
+        .front-page .latest-news div .news-container .news .thumbnail-wrapper img {
+          max-width: none;
+          position: absolute;
+          -webkit-transform: translate(-50%, -50%);
+          transform: translate(-50%, -50%);
+          top: 50%;
+          left: 50%; }
+      .front-page .latest-news div .news-container .news .blog-info {
+        padding: 0.75rem; }
+        .front-page .latest-news div .news-container .news .blog-info h3 {
+          overflow: hidden;
+          -ms-text-overflow: ellipsis;
+          text-overflow: ellipsis;
+          white-space: nowrap;
+          font-size: 1rem;
+          margin: 0 0 .25rem; }
+          .front-page .latest-news div .news-container .news .blog-info h3 a {
+            color: grey;
+            text-decoration: none; }
+        .front-page .latest-news div .news-container .news .blog-info p {
+          margin: 0;
+          font-size: 0.9rem;
+          color: #a1a1a1; }
