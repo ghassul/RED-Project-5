@@ -1,0 +1,54 @@
+/* Global */
+.container {
+  width: 1024px;
+  margin: 0 auto;
+}
+
+.content-area {
+  padding: 3rem 0;
+}
+
+.click-me-area {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+
+  .click-me-div{
+    display: flex;
+    justify-content: space-around;
+
+
+    p {
+      margin: 0;
+      line-height: 2.5;
+    }
+
+    .click-me-please {
+      background-color: $color_brn;
+      text-decoration: none;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      line-height: 1;
+      -webkit-border-radius: 3px;
+      -moz-border-radius: 3px;
+      border-radius: 3px;
+    }
+  }
+}
+
+.page-id-28, .blog, .tax-product-type,
+.single-product, .single-post, .search-results {
+
+  .site-content {
+    width: 1024px;
+    margin: 0 auto;
+    display: flex;
+
+    .content-area {
+      border-right: 1px solid #e1e1e1;
+      width: 73%;
+      padding-right: 5%;
+    }
+  }
+}

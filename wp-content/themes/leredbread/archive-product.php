@@ -12,23 +12,57 @@ get_header(); ?>
 
         <?php if ( have_posts() ) : ?>
 
-            <header class="page-header">
-                <?php
-                the_archive_title( '<h1 class="page-title">', '</h1>' );
-                the_archive_description( '<div class="taxonomy-description">', '</div>' );
-                ?>
-            </header><!-- .page-header -->
+            <div class="product-archive container">
+                <header class="page-header">
 
-            <?php /* Start the Loop */ ?>
-            <?php while ( have_posts() ) : the_post(); ?>
+                    <h1 class="page-title">Our products are made fresh daily</h1>
+                    <p class="page-subtitle">We are a team of talented and creative individuals who love making delicious treats.</p>
 
-                <?php
-                get_template_part( 'template-parts/content' );
-                ?>
-                <p class="price">Price: <?php echo esc_html( CFS()->get( 'price' ) ); ?></p>
-            <?php endwhile; ?>
 
-            <?php the_posts_navigation(); ?>
+                    <div class="product-types">
+                        <?php
+                        $terms = get_terms("product-type");
+                        if ($terms) {?>
+
+                            <?php foreach($terms as $term) { ?>
+                                <div class="product-type-block">
+                                <a href="<?php echo get_term_link( $term ); ?>">
+                                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/<?php echo $term->slug ?>.png"
+                                         alt="<?php echo $term->slug ?>">
+                                    <h3><?php echo $term->name ?></h3>
+                                </a>
+                                </div><?php
+                            }
+                        } ?>
+                    </div>
+
+                </header><!-- .page-header -->
+
+                <div class="grid">
+                    <?php /* Start the Loop */ ?>
+                    <?php while ( have_posts() ) : the_post(); ?>
+
+                        <div class="grid-item">
+                            <?php if ( has_post_thumbnail() ) : ?>
+                                <a href="<?php the_permalink(); ?>" title="<?php the_title_attribute(); ?>">
+                                    <?php the_post_thumbnail( 'medium' ); ?>
+                                </a>
+                            <?php endif; ?>
+
+                            <div class="item-info">
+                                <?php the_title( '<span class="entry-title">', '</span>' ); ?>
+                                <span class="filler">............................</span>
+                                <span class="price"><?php echo esc_html( CFS()->get( 'price' ) ); ?></span>
+                            </div>
+                        </div>
+
+
+                    <?php endwhile; ?>
+
+                    <?php the_posts_navigation(); ?>
+
+                </div>
+            </div>
 
         <?php else : ?>
 
@@ -39,5 +73,5 @@ get_header(); ?>
     </main><!-- #main -->
 </div><!-- #primary -->
 
-<?php get_sidebar(); ?>
 <?php get_footer(); ?>
+

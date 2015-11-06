@@ -41,6 +41,8 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 # Page Templates
+    ## Header
+    ## Footer
 	## Front page
 --------------------------------------------------------------*/
 html {
@@ -862,14 +864,53 @@ object {
       margin: 0;
       color: white; }
 
-/*--------------------------------------------------------------
-# Page Templates
---------------------------------------------------------------*/
 /* Global */
 .container {
   width: 1024px;
   margin: 0 auto; }
 
+.content-area {
+  padding: 3rem 0; }
+
+.click-me-area {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1; }
+  .click-me-area .click-me-div {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .click-me-area .click-me-div p {
+      margin: 0;
+      line-height: 2.5; }
+    .click-me-area .click-me-div .click-me-please {
+      background-color: #400c0d;
+      text-decoration: none;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      line-height: 1;
+      border-radius: 3px; }
+
+.page-id-28 .site-content, .blog .site-content, .tax-product-type .site-content,
+.single-product .site-content, .single-post .site-content, .search-results .site-content {
+  width: 1024px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .page-id-28 .site-content .content-area, .blog .site-content .content-area, .tax-product-type .site-content .content-area,
+  .single-product .site-content .content-area, .single-post .site-content .content-area, .search-results .site-content .content-area {
+    border-right: 1px solid #e1e1e1;
+    width: 73%;
+    padding-right: 5%; }
+
+/*--------------------------------------------------------------
+# Page Templates
+--------------------------------------------------------------*/
 /* Front page */
 .front-page .banner {
   background: url("../../assets/images/hero-bread.jpg") no-repeat center top;
@@ -901,13 +942,49 @@ object {
           justify-content: space-between;
   list-style: none;
   padding: 0;
-  margin: 0 0 3rem; }
+  margin: 0 0 2rem; }
   .front-page .product-information .product-type .product {
-    width: 22%; }
+    width: 22%;
+    margin-top: 3rem; }
     .front-page .product-information .product-type .product img {
       display: block;
       width: 80%;
       margin: 0 auto; }
+    .front-page .product-information .product-type .product h3 {
+      text-align: center;
+      margin-bottom: 1rem;
+      font-size: 1.3rem;
+      text-transform: uppercase;
+      font-family: "overlock", serif; }
+    .front-page .product-information .product-type .product p a {
+      color: #db272a;
+      text-decoration: none; }
+    .front-page .product-information .product-type .product p a:hover {
+      text-decoration: underline;
+      color: #861618; }
+
+.front-page .see-our-products {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1; }
+  .front-page .see-our-products .our-products-link {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .front-page .see-our-products .our-products-link p {
+      margin: 0;
+      line-height: 2.5; }
+    .front-page .see-our-products .our-products-link .product-btn {
+      background-color: #400c0d;
+      text-decoration: none;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      line-height: 1;
+      border-radius: 3px; }
 
 .front-page .latest-news {
   background-color: #fafafa;
@@ -964,3 +1041,324 @@ object {
           margin: 0;
           font-size: 0.9rem;
           color: #a1a1a1; }
+
+/* About page */
+.about-page .about-header {
+  text-align: center; }
+  .about-page .about-header h1 {
+    font-family: "overlock", serif;
+    font-size: 2.1rem;
+    text-transform: uppercase;
+    margin: 0; }
+  .about-page .about-header p {
+    margin: 0 0 3rem; }
+
+.about-page .blurbs {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between; }
+  .about-page .blurbs .blurb {
+    -webkit-flex: 0 1 47.5%;
+        -ms-flex: 0 1 47.5%;
+            flex: 0 1 47.5%; }
+    .about-page .blurbs .blurb .blurb-title {
+      font-family: "overlock", serif;
+      font-size: 1.6rem;
+      color: #400c0d;
+      margin: 0; }
+    .about-page .blurbs .blurb .blurb-subtitle {
+      margin-top: 0;
+      color: #a1a1a1; }
+
+.about-page .our-story {
+  margin-bottom: 4.5rem; }
+  .about-page .our-story h2 {
+    font-family: "overlock", serif;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 1rem 0 2.25rem; }
+
+/* Product Archive */
+.product-archive .page-header .page-title {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: "overlock", serif;
+  font-size: 2.1rem; }
+
+.product-archive .page-header .page-subtitle {
+  text-align: center; }
+
+.product-archive .page-header .product-types {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  width: 75%;
+  margin: 0 auto 3rem; }
+  .product-archive .page-header .product-types .product-type-block {
+    width: 22%; }
+    .product-archive .page-header .product-types .product-type-block a {
+      text-decoration: none;
+      text-align: center;
+      font-family: "overlock", serif;
+      color: black;
+      text-transform: uppercase; }
+      .product-archive .page-header .product-types .product-type-block a img {
+        width: 80%;
+        margin: 0 auto 1.5rem;
+        display: block; }
+      .product-archive .page-header .product-types .product-type-block a h3 {
+        margin: 0; }
+    .product-archive .page-header .product-types .product-type-block a:hover {
+      text-decoration: underline; }
+
+.product-archive .grid {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  margin-bottom: 1.5rem; }
+  .product-archive .grid .grid-item {
+    width: 25%;
+    border: 1px solid #e1e1e1; }
+    .product-archive .grid .grid-item .item-info {
+      padding: .75rem 1rem;
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex;
+      -webkit-justify-content: space-between;
+          -ms-flex-pack: justify;
+              justify-content: space-between; }
+      .product-archive .grid .grid-item .item-info .entry-title {
+        padding-right: 0.25rem; }
+      .product-archive .grid .grid-item .item-info .filler {
+        -webkit-flex: 0.5;
+            -ms-flex: 0.5;
+                flex: 0.5;
+        overflow: hidden; }
+
+/* Taxonomy filtered archive */
+.filtered-product-archive .page-header {
+  border-bottom: 1px dashed #d2d2d2;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem; }
+  .filtered-product-archive .page-header h1 {
+    text-transform: uppercase;
+    font-family: "overlock", serif;
+    font-size: 2.1rem;
+    font-weight: bold; }
+  .filtered-product-archive .page-header p {
+    margin: 0; }
+
+.filtered-product-archive .products .product {
+  border-bottom: 1px dashed #d2d2d2;
+  padding-bottom: 1.5rem;
+  margin-bottom: 1.5rem;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .filtered-product-archive .products .product .item-info {
+    padding: 0 1.5rem; }
+    .filtered-product-archive .products .product .item-info h2 {
+      margin: 0 0 1.5rem;
+      font-family: "overlock", serif;
+      color: #db272a;
+      font-size: 1.8rem;
+      line-height: 1; }
+      .filtered-product-archive .products .product .item-info h2 a {
+        text-decoration: none;
+        color: #db272a; }
+      .filtered-product-archive .products .product .item-info h2 a:hover {
+        text-decoration: underline;
+        color: #861618; }
+    .filtered-product-archive .products .product .item-info p {
+      margin: 0 0 1.5rem; }
+    .filtered-product-archive .products .product .item-info .price {
+      margin: 0; }
+
+/* Blog Page */
+.blog article {
+  margin-bottom: 4.5rem; }
+  .blog article .entry-title {
+    font-size: 1.8rem;
+    font-family: "overlock", serif;
+    margin: 0; }
+  .blog article a {
+    color: #db272a;
+    text-decoration: none;
+    font-weight: bold; }
+  .blog article a:hover {
+    text-decoration: underline;
+    color: #861618; }
+
+/* Single product page */
+.single-product article {
+  margin: 0 0 4.5rem; }
+  .single-product article .entry-header h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: "overlock", serif;
+    font-size: 2.1rem; }
+  .single-product article .entry-content .price {
+    font-size: 1.5rem;
+    font-family: "overlock", serif;
+    font-weight: bold;
+    margin: 0.5rem 0 1.5rem; }
+
+/* Contact Page */
+.page-id-28 article .entry-header .entry-title {
+  text-transform: uppercase;
+  font-family: "overlock", serif;
+  font-size: 2.1rem;
+  margin: 0; }
+
+.page-id-28 article .entry-content p {
+  margin: 0 0 1.5rem; }
+
+.page-id-28 article .entry-content h2 {
+  font-size: 1.8rem;
+  color: grey;
+  font-family: "overlock", serif; }
+
+.page-id-28 article .entry-content .wpcf7 form {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap; }
+  .page-id-28 article .entry-content .wpcf7 form label {
+    color: grey;
+    font-weight: bold; }
+    .page-id-28 article .entry-content .wpcf7 form label .star {
+      color: #db272a; }
+  .page-id-28 article .entry-content .wpcf7 form span input {
+    width: 100%;
+    background-color: #fafafa;
+    border: 1px solid #e1e1e1;
+    padding: .5rem .3rem; }
+  .page-id-28 article .entry-content .wpcf7 form textarea {
+    background-color: #fafafa;
+    border: 1px solid #e1e1e1; }
+  .page-id-28 article .entry-content .wpcf7 form .name {
+    width: 49%;
+    margin-right: 1%; }
+  .page-id-28 article .entry-content .wpcf7 form .email {
+    width: 49%;
+    margin-left: 1%; }
+  .page-id-28 article .entry-content .wpcf7 form .subject, .page-id-28 article .entry-content .wpcf7 form .message {
+    width: 100%; }
+  .page-id-28 article .entry-content .wpcf7 form .submit input {
+    font-size: 1rem;
+    font-weight: normal;
+    background-color: #400c0d;
+    text-decoration: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    line-height: 1;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none; }
+
+/* Single blog post */
+.single-post article a {
+  color: #db272a;
+  text-decoration: none; }
+
+.single-post article a:hover {
+  text-decoration: underline;
+  color: #861618; }
+
+.single-post article .entry-header .entry-title {
+  font-family: "overlock", serif;
+  font-size: 2.1rem;
+  text-transform: uppercase; }
+
+.single-post article .entry-footer .cat-links {
+  margin-right: 1.5rem; }
+
+.single-post .comments-area .comments-title {
+  font-family: "overlock", serif;
+  color: grey;
+  font-size: 1.8rem;
+  margin-bottom: 0; }
+
+.single-post .comments-area .comment-list {
+  padding: 0;
+  margin: 0; }
+  .single-post .comments-area .comment-list .comment {
+    padding: 1.5rem 0;
+    border-bottom: 1px dashed #d2d2d2; }
+    .single-post .comments-area .comment-list .comment .comment-body {
+      display: -webkit-flex;
+      display: -ms-flexbox;
+      display: flex; }
+      .single-post .comments-area .comment-list .comment .comment-body .comment-author-avatar {
+        border-radius: 50%;
+        margin-right: 1.5rem;
+        overflow: hidden;
+        height: 64px;
+        width: 64px; }
+      .single-post .comments-area .comment-list .comment .comment-body .comment-content p {
+        margin: 1rem 0 .75rem; }
+      .single-post .comments-area .comment-list .comment .comment-body .comment-content .comment-meta cite {
+        font-style: normal;
+        font-weight: bold; }
+      .single-post .comments-area .comment-list .comment .comment-body .comment-content .comment-meta time {
+        color: grey; }
+
+.single-post .comments-area .comment-respond h3 {
+  font-family: "overlock", serif;
+  font-size: 1.6rem; }
+
+.single-post .comments-area .comment-respond .comment-form label {
+  color: grey;
+  font-weight: bold; }
+
+.single-post .comments-area .comment-respond .comment-form .comment-form-comment textarea {
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1;
+  resize: none; }
+
+.single-post .comments-area .comment-respond .comment-form .form-submit input {
+  font-size: 1rem;
+  font-weight: normal;
+  background-color: #400c0d;
+  text-decoration: none;
+  color: white;
+  padding: 0.75rem 1.5rem;
+  line-height: 1;
+  border: none;
+  border-radius: 3px;
+  box-shadow: none; }
+
+/* Search Results */
+.search-results .page-header {
+  font-family: "overlock", serif;
+  text-transform: uppercase;
+  margin: 0 0 1.5rem;
+  padding-bottom: 1.5rem;
+  border-bottom: 1px dashed #d2d2d2; }
+  .search-results .page-header .page-title {
+    margin: 0; }
+
+.search-results article {
+  margin: 0 0 4.5rem; }
+  .search-results article .entry-title {
+    font-family: "overlock", serif;
+    font-size: 1.8rem; }
+  .search-results article .entry-summary a {
+    font-weight: bold; }
+  .search-results article a {
+    color: #db272a;
+    text-decoration: none; }
+  .search-results article a:hover {
+    text-decoration: underline;
+    color: #861618; }
