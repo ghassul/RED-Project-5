@@ -47,6 +47,7 @@ get_header(); ?>
     <section class="latest-news">
         <div class="container">
             <h2 class="news-heading">Our Latest News</h2>
+            <hr class="decorative">
             <ul class="news-container">
                 <?php
 

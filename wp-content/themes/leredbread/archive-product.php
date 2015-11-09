@@ -18,6 +18,7 @@ get_header(); ?>
                     <h1 class="page-title">Our products are made fresh daily</h1>
                     <p class="page-subtitle">We are a team of talented and creative individuals who love making delicious treats.</p>
 
+                    <hr class="decorative">
 
                     <div class="product-types">
                         <?php

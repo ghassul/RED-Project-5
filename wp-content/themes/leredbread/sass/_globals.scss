@@ -17,8 +17,7 @@
   .click-me-div{
     display: flex;
     justify-content: space-around;
-
-
+    
     p {
       margin: 0;
       line-height: 2.5;
@@ -38,7 +37,7 @@
 }
 
 .page-id-28, .blog, .tax-product-type,
-.single-product, .single-post, .search-results {
+.single-product, .single-post, .search-results, .error404 {
 
   .site-content {
     width: 1024px;
@@ -51,4 +50,19 @@
       padding-right: 5%;
     }
   }
+}
+
+.decorative {
+  color: #e1e1e1;
+  max-width: 320px;
+  margin-bottom: 3rem;
+  text-align: center;
+}
+
+.decorative:after {
+  content: '\f111';
+  font-family: FontAwesome;
+  font-size: .9rem;
+  position: relative;
+  top: -.875em;
 }

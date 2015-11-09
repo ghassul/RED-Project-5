@@ -17,6 +17,8 @@ get_header(); ?>
 
             </header>
 
+            <hr class="decorative">
+
             <div class="blurbs">
                 <div class="blurb">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/team.jpg" alt="">

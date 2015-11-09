@@ -15,6 +15,8 @@ if ( post_password_required() ) {
 }
 ?>
 
+<hr class="decorative">
+
 <div id="comments" class="comments-area">
 
 	<?php // You can start editing here -- including this comment! ?>
@@ -67,7 +69,7 @@ if ( post_password_required() ) {
 
 	<?php comment_form( array(
 		'title_reply'          => esc_html( 'Post a Comment' ),
-		'comment_notes_before' => esc_html( '<p class="comment-notes">Want to join the discussion? Feel free to contribute!</p>' ),
+			'comment_notes_before' => wp_kses( '<p class="comment-notes">Want to join the discussion? Feel free to contribute!</p>', array( 'p' => array( 'class' => '' ) ) ),
 		'label_submit'         => esc_html( 'Submit' ),
 		'cancel_reply_link'    => esc_html( '[Cancel reply]' )
 	) ); ?>

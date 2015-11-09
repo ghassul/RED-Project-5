@@ -1,3 +1,56 @@
 .widget-area {
+  width: 27%;
+  padding: 3rem 0 3rem 5%;
 
+  a {
+    color: $color_red;
+    text-decoration: none;
+  }
+
+  a:hover {
+    text-decoration: underline;
+    color: #861618;
+  }
+
+  .widget-title {
+    font-family: $font__accent;
+    text-transform: uppercase;
+    font-size: 1.2rem;
+  }
+
+  .widget_text {
+
+    .info {
+      display: flex;
+      margin-bottom: .5rem;
+
+      i {
+        width: 20px;
+        margin-right: .5rem;
+        line-height: 1.6rem;
+        color: grey;
+      }
+    }
+  }
+
+  .lrb-business-hours-class {
+    
+    p {
+      margin: 0 0 .5rem;
+
+      span {
+        font-weight: bold;
+        color: $color_red;
+      }
+    }
+  }
+
+  .widget_archive {
+
+    ul {
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+  }
 }

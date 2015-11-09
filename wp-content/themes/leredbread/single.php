@@ -20,7 +20,7 @@ get_header(); ?>
 					comments_template();
 				endif;
 			?>
-			
+
 		<?php endwhile; // End of the loop. ?>
 
 		</main><!-- #main -->
