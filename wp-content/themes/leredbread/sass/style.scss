@@ -44,7 +44,14 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 # Page Templates
     ## Header
     ## Footer
+    ## Sidebar
 	## Front page
+	## About page
+	## Products
+	## Blog
+	## Contact
+	## Search
+	## 404 page
 --------------------------------------------------------------*/
 
 // Imported but not included in the stylesheet.
@@ -68,4 +75,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "sidebar";
 @import "footer";
 @import "globals";
-@import "page-templates";
+@import "front-page";
+@import "about-page";
+@import "products";
+@import "blog";
+@import "contact";
+@import "search";
+@import "404-page";

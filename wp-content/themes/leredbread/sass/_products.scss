@@ -1,0 +1,168 @@
+/* Product Archive */
+.product-archive {
+
+  .page-header {
+
+    .page-title {
+      text-align: center;
+      text-transform: uppercase;
+      font-family: $font__accent;
+      font-size: 2.1rem;
+    }
+
+    .page-subtitle {
+      text-align: center;
+      margin-bottom: 3rem;
+    }
+
+    .product-types {
+      display: flex;
+      justify-content: space-between;
+      width: 75%;
+      margin: 0 auto 3rem;
+
+      .product-type-block {
+        width: 22%;
+
+        a {
+          text-decoration: none;
+          text-align: center;
+          font-family: $font__accent;
+          color: black;
+          text-transform: uppercase;
+
+          img {
+            width: 80%;
+            margin: 0 auto 1.5rem;
+            display: block;
+          }
+
+          h3 {
+            margin: 0;
+          }
+        }
+
+        a:hover {
+          text-decoration: underline;
+        }
+      }
+    }
+  }
+
+  .grid {
+    display: flex;
+    flex-wrap: wrap;
+    margin-bottom: 1.5rem;
+
+    .grid-item {
+      width: 25%;
+      border: 1px solid #e1e1e1;
+
+      .item-info {
+        padding: .75rem 1rem;
+        display: flex;
+        justify-content: space-between;
+
+        .entry-title {
+          padding-right: 0.25rem;
+        }
+
+        .filler {
+          flex: 0.5;
+          overflow: hidden;
+        }
+      }
+    }
+  }
+}
+
+
+/* Taxonomy filtered archive */
+.filtered-product-archive {
+
+  .page-header {
+    border-bottom: 1px dashed #d2d2d2;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+
+    h1 {
+      text-transform: uppercase;
+      font-family: $font__accent;
+      font-size: 2.1rem;
+      font-weight: bold;
+    }
+
+    p {
+      margin: 0;
+    }
+  }
+
+  .products {
+
+    .product {
+      border-bottom: 1px dashed #d2d2d2;
+      padding-bottom: 1.5rem;
+      margin-bottom: 1.5rem;
+      display: flex;
+
+      .item-info {
+        padding: 0 1.5rem;
+
+        h2 {
+          margin: 0 0 1.5rem;
+          font-family: $font__accent;
+          color: $color_red;
+          font-size: 1.8rem;
+          line-height: 1;
+
+          a {
+            text-decoration: none;
+            color: $color_red;
+          }
+
+          a:hover {
+            text-decoration: underline;
+            color: #861618;
+          }
+        }
+
+        p {
+          margin: 0 0 1.5rem;
+        }
+
+        .price {
+          margin: 0;
+        }
+      }
+    }
+  }
+}
+
+
+/* Single product page */
+.single-product {
+
+  article {
+    margin: 0 0 4.5rem;
+
+    .entry-header {
+
+      h1 {
+        margin: 0;
+        text-transform: uppercase;
+        font-family: $font__accent;
+        font-size: 2.1rem;
+      }
+    }
+
+    .entry-content {
+
+      .price {
+        font-size: 1.5rem;
+        font-family: $font__accent;
+        font-weight: bold;
+        margin: 0.5rem 0 1.5rem;
+      }
+    }
+  }
+}

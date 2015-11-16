@@ -12,7 +12,7 @@
 		<meta name="viewport" content="width=device-width, initial-scale=1">
 		<link rel="profile" href="http://gmpg.org/xfn/11">
 		<link rel="pingback" href="<?php bloginfo( 'pingback_url' ); ?>">
-		<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/font-awesome/4.4.0/css/font-awesome.min.css">
+
 
 	<?php wp_head(); ?>
 	</head>
@@ -27,7 +27,10 @@
 				<div class="branding_container">
 					<div class="site-branding container">
 
-						<img src="<?php echo get_template_directory_uri() . "/assets/images/lrb-logo.svg"?>" class="header_logo" alt="le red bread logo">
+						<a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home">
+							<img src="<?php echo get_template_directory_uri() . "/assets/images/lrb-logo.svg"?>" class="header_logo" alt="le red bread logo">
+						</a>
+
 						<h1 class="site-title screen-reader-text"><a href="<?php echo esc_url( home_url( '/' ) ); ?>" rel="home"><?php bloginfo( 'name' ); ?></a></h1>
 
 						<div class="social_logos">
