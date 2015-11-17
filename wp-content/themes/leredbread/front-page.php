@@ -16,9 +16,9 @@ get_header(); ?>
 
         <?php
         $product_type_terms = get_terms("product-type");
-        if ($product_type_terms) {?>
+        if ($product_type_terms): ?>
             <ul class="product-type">
-            <?php foreach($product_type_terms as $product) { ?>
+            <?php foreach($product_type_terms as $product): ?>
                 <li class="product">
                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/<?php echo $product->slug ?>.png"
                          alt="<?php echo $product->slug ?>">
@@ -26,10 +26,9 @@ get_header(); ?>
                     <p><?php echo $product->description;?>
                         <a href="<?php echo get_term_link( $product ); ?>">See More...</a>
                     </p>
-                </li><?php
-            }
-        } ?>
-
+                </li>
+                <?php endforeach; ?>
+        <?php endif; ?>
     </section>
 
     <section class="click-me-area container">
