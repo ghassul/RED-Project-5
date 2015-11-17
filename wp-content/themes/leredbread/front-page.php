@@ -12,27 +12,25 @@ get_header(); ?>
         <h1 class="banner-text container">Baked to Perfection.</h1>
     </section>
 
-
     <section class="product-information container">
 
         <?php
-        $terms = get_terms("product-type");
-        if ($terms) {?>
+        $product_type_terms = get_terms("product-type");
+        if ($product_type_terms) {?>
             <ul class="product-type">
-            <?php foreach($terms as $term) { ?>
+            <?php foreach($product_type_terms as $product) { ?>
                 <li class="product">
-                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/<?php echo $term->slug ?>.png"
-                         alt="<?php echo $term->slug ?>">
-                    <h3><?php echo $term->name ?></h3>
-                    <p><?php echo $term->description;?>
-                        <a href="<?php echo get_term_link( $term ); ?>">See More...</a>
+                    <img src="<?php echo get_template_directory_uri() ?>/assets/images/<?php echo $product->slug ?>.png"
+                         alt="<?php echo $product->slug ?>">
+                    <h3><?php echo $product->name ?></h3>
+                    <p><?php echo $product->description;?>
+                        <a href="<?php echo get_term_link( $product ); ?>">See More...</a>
                     </p>
                 </li><?php
             }
         } ?>
 
     </section>
-
 
     <section class="click-me-area container">
         <div class="click-me-div">
@@ -42,7 +40,6 @@ get_header(); ?>
 
         </div>
     </section>
-
 
     <section class="latest-news">
         <div class="container">
@@ -68,9 +65,6 @@ get_header(); ?>
             </ul>
         </div>
     </section>
-
-
-
 </div>
 
 <?php get_footer(); ?>
