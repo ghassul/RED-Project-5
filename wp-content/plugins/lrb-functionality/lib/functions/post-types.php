@@ -43,6 +43,7 @@ function lrb_product_post_type() {
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
         'capability_type'     => 'post',
+        'menu_icon'           => 'dashicons-products',
     );
     register_post_type( 'product', $args );
 
@@ -87,6 +88,7 @@ function lrb_testimonial_post_type() {
         'exclude_from_search' => false,
         'publicly_queryable'  => true,
         'capability_type'     => 'post',
+        'menu_icon'           => 'dashicons-testimonial',
     );
     register_post_type( 'testimonial', $args );
 
