@@ -49,6 +49,17 @@ function red_starter_content_width() {
 }
 add_action( 'after_setup_theme', 'red_starter_content_width', 0 );
 
+
+function wpfstop_change_default_title( $title ){
+	$screen = get_current_screen();
+	if ( 'testimonial' == $screen->post_type ){
+		$title = 'Enter name of testimonial giver.';
+	}
+	return $title;
+}
+add_filter( 'enter_title_here', 'wpfstop_change_default_title' );
+
+
 /**
  * Register widget area.
  *
@@ -92,6 +103,8 @@ function red_starter_scripts() {
 	}
 }
 add_action( 'wp_enqueue_scripts', 'red_starter_scripts' );
+
+
 
 /**
  * Custom template tags for this theme.

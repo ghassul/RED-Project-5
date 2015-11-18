@@ -47,6 +47,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Front page
 	## About page
 	## Products
+	## Testimonials
 	## Blog
 	## Contact
 	## Search
@@ -937,14 +938,16 @@ object {
       border-radius: 3px; }
 
 .page-id-28 .site-content, .blog .site-content, .tax-product-type .site-content,
-.single-product .site-content, .single-post .site-content, .search-results .site-content, .error404 .site-content {
+.single-product .site-content, .single-post .site-content, .search-results .site-content,
+.post-type-archive-testimonial .site-content, .error404 .site-content {
   width: 1024px;
   margin: 0 auto;
   display: -webkit-flex;
   display: -ms-flexbox;
   display: flex; }
   .page-id-28 .site-content .content-area, .blog .site-content .content-area, .tax-product-type .site-content .content-area,
-  .single-product .site-content .content-area, .single-post .site-content .content-area, .search-results .site-content .content-area, .error404 .site-content .content-area {
+  .single-product .site-content .content-area, .single-post .site-content .content-area, .search-results .site-content .content-area,
+  .post-type-archive-testimonial .site-content .content-area, .error404 .site-content .content-area {
     border-right: 1px solid #e1e1e1;
     width: 73%;
     padding-right: 5%; }
@@ -1248,6 +1251,18 @@ object {
     font-family: "overlock", serif;
     font-weight: bold;
     margin: 0.5rem 0 1.5rem; }
+
+.testimonial-archive img {
+  height: 100px;
+  width: 100px; }
+
+.testimonial-archive a {
+  color: #db272a;
+  text-decoration: none; }
+
+.testimonial-archive a:hover {
+  text-decoration: underline;
+  color: #861618; }
 
 /* Blog Page */
 .blog article {

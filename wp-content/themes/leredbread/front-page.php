@@ -64,6 +64,23 @@ get_header(); ?>
             </ul>
         </div>
     </section>
+
+    <section>
+        <div>
+            <?php
+            $terms = get_terms("testimonial");
+            if ($terms): ?>
+                <?php foreach($terms as $term): ?>
+                    <div class="product-type-block">
+                        <img src="<?php echo $term->head_shot ?>"
+                             alt="head shot">
+                        <h3><?php the_title(); ?></h3>
+                        <p><?php echo $term->testimonial_body ?></p>
+                    </div><?php
+                endforeach;
+            endif; ?>
+        </div>
+    </section>
 </div>
 
 <?php get_footer(); ?>
