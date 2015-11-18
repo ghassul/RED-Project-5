@@ -41,6 +41,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 # Page Templates
+    ## Global
     ## Header
     ## Footer
     ## Sidebar
@@ -474,11 +475,13 @@ textarea {
 --------------------------------------------------------------*/
 /* Links */
 a {
-  color: royalblue; }
+  color: #db272a;
+  text-decoration: none; }
   a:visited {
-    color: purple; }
+    color: #db272a; }
   a:hover, a:focus, a:active {
-    color: midnightblue; }
+    color: #861618;
+    text-decoration: underline; }
   a:focus {
     outline: thin dotted; }
   a:hover, a:active {
@@ -718,6 +721,65 @@ object {
 .gallery-caption {
   display: block; }
 
+/* Global */
+.container {
+  width: 1024px;
+  margin: 0 auto; }
+
+.content-area {
+  padding: 3rem 0; }
+
+.click-me-area {
+  margin-bottom: 3rem;
+  padding: 1.5rem;
+  background-color: #fafafa;
+  border: 1px solid #e1e1e1; }
+  .click-me-area .click-me-div {
+    display: -webkit-flex;
+    display: -ms-flexbox;
+    display: flex;
+    -webkit-justify-content: space-around;
+        -ms-flex-pack: distribute;
+            justify-content: space-around; }
+    .click-me-area .click-me-div p {
+      margin: 0;
+      line-height: 2.5; }
+    .click-me-area .click-me-div .click-me-please {
+      background-color: #400c0d;
+      text-decoration: none;
+      color: white;
+      padding: 0.75rem 1.5rem;
+      line-height: 1;
+      border-radius: 3px; }
+
+.page-id-28 .site-content, .blog .site-content, .tax-product-type .site-content,
+.single-product .site-content, .single-post .site-content, .search-results .site-content,
+.post-type-archive-testimonial .site-content, .error404 .site-content {
+  width: 1024px;
+  margin: 0 auto;
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex; }
+  .page-id-28 .site-content .content-area, .blog .site-content .content-area, .tax-product-type .site-content .content-area,
+  .single-product .site-content .content-area, .single-post .site-content .content-area, .search-results .site-content .content-area,
+  .post-type-archive-testimonial .site-content .content-area, .error404 .site-content .content-area {
+    border-right: 1px solid #e1e1e1;
+    width: 73%;
+    padding-right: 5%; }
+
+.decorative {
+  color: #e1e1e1;
+  max-width: 320px;
+  margin-bottom: 3rem;
+  text-align: center; }
+
+.decorative:after {
+  content: '\f111';
+  font-family: FontAwesome;
+  font-size: .9rem;
+  position: relative;
+  top: -.875em; }
+
 .site-header {
   padding-top: 2.25rem;
   background-color: #fafafa; }
@@ -812,12 +874,6 @@ object {
 .widget-area {
   width: 27%;
   padding: 3rem 0 3rem 5%; }
-  .widget-area a {
-    color: #db272a;
-    text-decoration: none; }
-  .widget-area a:hover {
-    text-decoration: underline;
-    color: #861618; }
   .widget-area .widget-title {
     font-family: "overlock", serif;
     text-transform: uppercase;
@@ -880,10 +936,7 @@ object {
           -ms-flex-pack: center;
               justify-content: center; }
       .site-footer .company_info .contact a {
-        color: white;
-        text-decoration: none; }
-      .site-footer .company_info .contact a:hover {
-        text-decoration: underline; }
+        color: white; }
     .site-footer .company_info .footer_logo {
       width: 250px;
       height: 163px; }
@@ -905,65 +958,6 @@ object {
       font-size: 0.8rem;
       margin: 0;
       color: white; }
-
-/* Global */
-.container {
-  width: 1024px;
-  margin: 0 auto; }
-
-.content-area {
-  padding: 3rem 0; }
-
-.click-me-area {
-  margin-bottom: 3rem;
-  padding: 1.5rem;
-  background-color: #fafafa;
-  border: 1px solid #e1e1e1; }
-  .click-me-area .click-me-div {
-    display: -webkit-flex;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-justify-content: space-around;
-        -ms-flex-pack: distribute;
-            justify-content: space-around; }
-    .click-me-area .click-me-div p {
-      margin: 0;
-      line-height: 2.5; }
-    .click-me-area .click-me-div .click-me-please {
-      background-color: #400c0d;
-      text-decoration: none;
-      color: white;
-      padding: 0.75rem 1.5rem;
-      line-height: 1;
-      border-radius: 3px; }
-
-.page-id-28 .site-content, .blog .site-content, .tax-product-type .site-content,
-.single-product .site-content, .single-post .site-content, .search-results .site-content,
-.post-type-archive-testimonial .site-content, .error404 .site-content {
-  width: 1024px;
-  margin: 0 auto;
-  display: -webkit-flex;
-  display: -ms-flexbox;
-  display: flex; }
-  .page-id-28 .site-content .content-area, .blog .site-content .content-area, .tax-product-type .site-content .content-area,
-  .single-product .site-content .content-area, .single-post .site-content .content-area, .search-results .site-content .content-area,
-  .post-type-archive-testimonial .site-content .content-area, .error404 .site-content .content-area {
-    border-right: 1px solid #e1e1e1;
-    width: 73%;
-    padding-right: 5%; }
-
-.decorative {
-  color: #e1e1e1;
-  max-width: 320px;
-  margin-bottom: 3rem;
-  text-align: center; }
-
-.decorative:after {
-  content: '\f111';
-  font-family: FontAwesome;
-  font-size: .9rem;
-  position: relative;
-  top: -.875em; }
 
 /* Front page */
 .front-page .banner {
@@ -1010,12 +1004,6 @@ object {
       font-size: 1.3rem;
       text-transform: uppercase;
       font-family: "overlock", serif; }
-    .front-page .product-information .product-type .product p a {
-      color: #db272a;
-      text-decoration: none; }
-    .front-page .product-information .product-type .product p a:hover {
-      text-decoration: underline;
-      color: #861618; }
 
 .front-page .see-our-products {
   margin-bottom: 3rem;
@@ -1089,8 +1077,7 @@ object {
           font-size: 1rem;
           margin: 0 0 .25rem; }
           .front-page .latest-news div .news-container .news .blog-info h3 a {
-            color: grey;
-            text-decoration: none; }
+            color: grey; }
         .front-page .latest-news div .news-container .news .blog-info p {
           margin: 0;
           font-size: 0.9rem;
@@ -1158,7 +1145,6 @@ object {
   .product-archive .page-header .product-types .product-type-block {
     width: 22%; }
     .product-archive .page-header .product-types .product-type-block a {
-      text-decoration: none;
       text-align: center;
       font-family: "overlock", serif;
       color: black;
@@ -1169,8 +1155,6 @@ object {
         display: block; }
       .product-archive .page-header .product-types .product-type-block a h3 {
         margin: 0; }
-    .product-archive .page-header .product-types .product-type-block a:hover {
-      text-decoration: underline; }
 
 .product-archive .grid {
   display: -webkit-flex;
@@ -1227,12 +1211,6 @@ object {
       color: #db272a;
       font-size: 1.8rem;
       line-height: 1; }
-      .filtered-product-archive .products .product .item-info h2 a {
-        text-decoration: none;
-        color: #db272a; }
-      .filtered-product-archive .products .product .item-info h2 a:hover {
-        text-decoration: underline;
-        color: #861618; }
     .filtered-product-archive .products .product .item-info p {
       margin: 0 0 1.5rem; }
     .filtered-product-archive .products .product .item-info .price {
@@ -1256,14 +1234,6 @@ object {
   height: 100px;
   width: 100px; }
 
-.testimonial-archive a {
-  color: #db272a;
-  text-decoration: none; }
-
-.testimonial-archive a:hover {
-  text-decoration: underline;
-  color: #861618; }
-
 /* Blog Page */
 .blog article {
   margin-bottom: 4.5rem; }
@@ -1272,22 +1242,9 @@ object {
     font-family: "overlock", serif;
     margin: 0; }
   .blog article a {
-    color: #db272a;
-    text-decoration: none;
     font-weight: bold; }
-  .blog article a:hover {
-    text-decoration: underline;
-    color: #861618; }
 
 /* Single blog post */
-.single-post a {
-  color: #db272a;
-  text-decoration: none; }
-
-.single-post a:hover {
-  text-decoration: underline;
-  color: #861618; }
-
 .single-post .type-post {
   margin-bottom: 4.5rem; }
   .single-post .type-post .entry-title {
@@ -1453,12 +1410,6 @@ object {
     font-size: 1.8rem; }
   .search-results article .entry-summary a {
     font-weight: bold; }
-  .search-results article a {
-    color: #db272a;
-    text-decoration: none; }
-  .search-results article a:hover {
-    text-decoration: underline;
-    color: #861618; }
 
 /* 404 Page */
 .error404 .content-area .search-form fieldset {
@@ -1493,11 +1444,3 @@ object {
   margin: 0; }
   .error404 .content-area ul li {
     margin-bottom: .25rem; }
-
-.error404 .content-area a {
-  color: #db272a;
-  text-decoration: none; }
-
-.error404 .content-area a:hover {
-  text-decoration: underline;
-  color: #861618; }

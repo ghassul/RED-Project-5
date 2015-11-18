@@ -25,7 +25,6 @@
         width: 22%;
 
         a {
-          text-decoration: none;
           text-align: center;
           font-family: $font__accent;
           color: black;
@@ -42,9 +41,6 @@
           }
         }
 
-        a:hover {
-          text-decoration: underline;
-        }
       }
     }
   }
@@ -114,16 +110,6 @@
           color: $color_red;
           font-size: 1.8rem;
           line-height: 1;
-
-          a {
-            text-decoration: none;
-            color: $color_red;
-          }
-
-          a:hover {
-            text-decoration: underline;
-            color: #861618;
-          }
         }
 
         p {

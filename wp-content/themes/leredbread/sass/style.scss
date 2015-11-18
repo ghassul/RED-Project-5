@@ -42,6 +42,7 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 	## Captions
 	## Galleries
 # Page Templates
+    ## Global
     ## Header
     ## Footer
     ## Sidebar
@@ -72,10 +73,10 @@ Nicolas Gallagher and Jonathan Neal http://necolas.github.com/normalize.css/
 @import "widgets";
 @import "content";
 @import "media";
+@import "global";
 @import "header";
 @import "sidebar";
 @import "footer";
-@import "globals";
 @import "front-page";
 @import "about-page";
 @import "products";
