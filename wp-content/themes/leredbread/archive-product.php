@@ -36,7 +36,6 @@ get_header(); ?>
                             }
                         } ?>
                     </div>
-
                 </header><!-- .page-header -->
 
                 <div class="grid">

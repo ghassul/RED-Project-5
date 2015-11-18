@@ -21,19 +21,16 @@ get_header(); ?>
                     <?php while ( have_posts() ) : the_post(); ?>
 
                         <div class="testimonial-item">
+                            <img src="<?php echo esc_html( CFS()->get( 'head_shot' ) ); ?>"
+                                 class="head-shot" alt="<?php the_title_attribute(); ?> headshot">
 
-                            <div class="item-info">
-                                <img src="<?php echo esc_html( CFS()->get( 'head_shot' ) ); ?>"
-                                     class="head-shot" alt="<?php the_title_attribute(); ?> headshot">
+                            <div class="testimonial-content">
 
-                                <div class="testimonial-content">
+                                <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+                                <p><?php echo esc_html( CFS()->get( 'testimonial_body' ) ); ?></p>
+                                <p><?php echo esc_html( CFS()->get( 'occupation' ) ) . ' &ndash; ';
+                                    echo CFS()->get( 'customer_site_link' ); ?></p>
 
-                                    <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
-                                    <p><?php echo esc_html( CFS()->get( 'testimonial_body' ) ); ?></p>
-                                    <p><?php echo esc_html( CFS()->get( 'occupation' ) ) . ' - ';
-                                        echo CFS()->get( 'customer_site_link' ); ?></p>
-
-                                </div>
                             </div>
                         </div>
 

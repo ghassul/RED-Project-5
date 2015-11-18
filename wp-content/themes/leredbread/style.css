@@ -1230,9 +1230,41 @@ object {
     font-weight: bold;
     margin: 0.5rem 0 1.5rem; }
 
+.testimonial-archive header {
+  padding-bottom: 1.5rem; }
+
+.testimonial-archive header, .testimonial-archive .testimonial-item {
+  border-bottom: 1px dashed #d2d2d2;
+  margin-bottom: 1.5rem; }
+
+.testimonial-archive h1 {
+  text-transform: uppercase;
+  font-family: "overlock", serif;
+  font-size: 2.1rem;
+  margin: 0; }
+
 .testimonial-archive img {
   height: 100px;
-  width: 100px; }
+  width: 100px;
+  margin-right: 1.5rem; }
+
+.testimonial-archive .testimonial-item {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-align-content: flex-start;
+      -ms-flex-line-pack: start;
+          align-content: flex-start; }
+
+.testimonial-archive h2 {
+  font-family: "overlock", serif;
+  color: #808080;
+  font-size: 1.8rem;
+  margin: 0 0 .25rem;
+  line-height: 1.25; }
+
+.testimonial-archive p {
+  margin-top: 0; }
 
 /* Blog Page */
 .blog article {
