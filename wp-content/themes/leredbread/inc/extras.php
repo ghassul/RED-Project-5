@@ -129,3 +129,16 @@ function red_archive_title( $title ) {
     return $title;
 }
 add_filter( 'get_the_archive_title', 'red_archive_title' );
+
+/**
+ * Redirects single testimonial pages to testimonial archive
+ */
+function my_page_template_redirect()
+{
+    if( is_singular( 'testimonial' ))
+    {
+        wp_redirect( home_url( '/testimonials/' ) );
+        exit();
+    }
+}
+add_action( 'template_redirect', 'my_page_template_redirect' );
