@@ -12,8 +12,8 @@ get_header(); ?>
         <?php if ( have_posts() ) : ?>
 
             <div class="testimonial-archive">
-                <header>
-                    <h1>Testimonials</h1>
+                <header class="testimonial-header">
+                    <h1 class="testimonial-title">Testimonials</h1>
                 </header>
 
                 <section>
@@ -26,7 +26,7 @@ get_header(); ?>
 
                             <div class="testimonial-content">
 
-                                <?php the_title( '<h2 class="entry-title">', '</h2>' ); ?>
+                                <?php the_title( '<h2 class="customer-name">', '</h2>' ); ?>
                                 <p><?php echo esc_html( CFS()->get( 'testimonial_body' ) ); ?></p>
                                 <p><?php echo esc_html( CFS()->get( 'occupation' ) ) . ' &ndash; ';
                                     echo CFS()->get( 'customer_site_link' ); ?></p>

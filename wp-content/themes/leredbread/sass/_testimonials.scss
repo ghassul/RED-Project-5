@@ -1,22 +1,22 @@
 .testimonial-archive {
 
-  header {
+  .testimonial-header {
     padding-bottom: 1.5rem;
   }
 
-  header, .testimonial-item {
+  .testimonial-header, .testimonial-item {
     border-bottom: 1px dashed #d2d2d2;
     margin-bottom: 1.5rem;
   }
 
-  h1 {
+  .testimonial-title {
     text-transform: uppercase;
     font-family: $font__accent;
     font-size: 2.1rem;
     margin: 0;
   }
 
-  img {
+  .head-shot {
     height: 100px;
     width: 100px;
     margin-right: 1.5rem;
@@ -27,7 +27,7 @@
     align-content: flex-start;
   }
 
-  h2 {
+  .customer-name {
     font-family: $font__accent;
     color: $color_mdgr;
     font-size: 1.8rem;

@@ -1028,19 +1028,20 @@ object {
       line-height: 1;
       border-radius: 3px; }
 
+.front-page .latest-news h2, .front-page .testimonials h2 {
+  text-transform: uppercase;
+  color: #333;
+  font-family: "overlock", serif;
+  font-size: 1.8rem;
+  margin-bottom: 2.25rem;
+  text-align: center; }
+
 .front-page .latest-news {
   background-color: #fafafa;
   border-bottom: 1px solid #e1e1e1;
   border-top: 1px solid #e1e1e1;
   padding: 3rem 0;
   margin-bottom: 3rem; }
-  .front-page .latest-news div .news-heading {
-    text-transform: uppercase;
-    color: #333;
-    font-family: "overlock", serif;
-    font-size: 1.8rem;
-    margin-bottom: 2.25rem;
-    text-align: center; }
   .front-page .latest-news div .news-container {
     list-style: none;
     display: -webkit-flex;
@@ -1082,6 +1083,46 @@ object {
           margin: 0;
           font-size: 0.9rem;
           color: #a1a1a1; }
+
+.front-page .testimonials .head-shot {
+  height: 100px;
+  width: 100px;
+  margin-right: 1.5rem; }
+
+.front-page .testimonials ul {
+  display: -webkit-flex;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-justify-content: space-between;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-flex-wrap: wrap;
+      -ms-flex-wrap: wrap;
+          flex-wrap: wrap;
+  list-style: none;
+  margin: 0 0 3rem;
+  padding: 0; }
+
+.front-page .testimonials li {
+  -webkit-flex: 1 0 50%;
+      -ms-flex: 1 0 50%;
+          flex: 1 0 50%;
+  padding: 1.5rem; }
+
+.front-page .testimonials li:first-child, .front-page .testimonials li:nth-child(3) {
+  border-right: 1px dashed #d2d2d2; }
+
+.front-page .testimonials li:first-child, .front-page .testimonials li:nth-child(2) {
+  border-bottom: 1px dashed #d2d2d2; }
+
+.front-page .testimonials p {
+  margin: 0; }
+
+.front-page .testimonials .testimonial-body {
+  margin-bottom: 1.5rem; }
+
+.front-page .testimonials .customer-name {
+  font-weight: bold; }
 
 /* About page */
 .about-page .about-header {
@@ -1230,20 +1271,20 @@ object {
     font-weight: bold;
     margin: 0.5rem 0 1.5rem; }
 
-.testimonial-archive header {
+.testimonial-archive .testimonial-header {
   padding-bottom: 1.5rem; }
 
-.testimonial-archive header, .testimonial-archive .testimonial-item {
+.testimonial-archive .testimonial-header, .testimonial-archive .testimonial-item {
   border-bottom: 1px dashed #d2d2d2;
   margin-bottom: 1.5rem; }
 
-.testimonial-archive h1 {
+.testimonial-archive .testimonial-title {
   text-transform: uppercase;
   font-family: "overlock", serif;
   font-size: 2.1rem;
   margin: 0; }
 
-.testimonial-archive img {
+.testimonial-archive .head-shot {
   height: 100px;
   width: 100px;
   margin-right: 1.5rem; }
@@ -1256,7 +1297,7 @@ object {
       -ms-flex-line-pack: start;
           align-content: flex-start; }
 
-.testimonial-archive h2 {
+.testimonial-archive .customer-name {
   font-family: "overlock", serif;
   color: #808080;
   font-size: 1.8rem;

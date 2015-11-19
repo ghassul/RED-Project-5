@@ -65,21 +65,35 @@ get_header(); ?>
         </div>
     </section>
 
-    <section>
-        <div>
-            <?php
-            $terms = get_terms("testimonial");
-            if ($terms): ?>
-                <?php foreach($terms as $term): ?>
-                    <div class="product-type-block">
-                        <img src="<?php echo $term->head_shot ?>"
-                             alt="head shot">
-                        <h3><?php the_title(); ?></h3>
-                        <p><?php echo $term->testimonial_body ?></p>
-                    </div><?php
-                endforeach;
-            endif; ?>
-        </div>
+    <section class="testimonials container">
+
+        <h2>What other say about us</h2>
+        <hr class="decorative">
+
+        <ul>
+        <?php
+
+        $testimonial_args = array( 'post_type' => 'testimonial', 'posts_per_page' => 4, 'order' => 'ASC' );
+        $loop = new WP_Query( $testimonial_args );
+
+        while ( $loop->have_posts() ) : $loop->the_post(); ?>
+
+            <li class="testimonial-item">
+                <img src="<?php echo esc_html( CFS()->get( 'head_shot' ) ); ?>"
+                     class="head-shot" alt="<?php the_title_attribute(); ?> headshot">
+
+                <div class="testimonial-content">
+
+                    <p class="testimonial-body"><?php echo esc_html( CFS()->get( 'testimonial_body' ) ); ?></p>
+                    <?php the_title( '<p class="customer-name">', '</p>' ); ?>
+                    <p><?php echo esc_html( CFS()->get( 'occupation' ) ) . ' &ndash; ';
+                        echo CFS()->get( 'customer_site_link' ); ?></p>
+
+                </div>
+            </li>
+
+        <?php endwhile; ?>
+        </ul>
     </section>
 </div>
 
