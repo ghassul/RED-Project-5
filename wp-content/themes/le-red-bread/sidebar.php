@@ -1,6 +1,6 @@
 <?php
 /**
- * The sidebar containing the main widget area.s
+ * The sidebar containing the main widget areas.
  *
  * @package RED_Starter_Theme
  */

@@ -55,7 +55,7 @@ get_header(); ?>
                         <div class="thumbnail-wrapper"><?php the_post_thumbnail( 'large' ); ?></div>
                         <div class="blog-info">
                             <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
-                            <p><?php the_date('d M Y'); ?> / <?php comments_number('0 Comments'); ?></p>
+                            <p><?php the_date(get_option( 'date_format' )); ?> / <?php comments_number('0 Comments'); ?></p>
                         </div>
                     </li>
                 <?php endforeach;
