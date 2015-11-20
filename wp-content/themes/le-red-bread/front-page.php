@@ -24,10 +24,11 @@ get_header(); ?>
                          alt="<?php echo $product->slug ?>">
                     <h3><?php echo $product->name ?></h3>
                     <p><?php echo $product->description;?>
-                        <a href="<?php echo get_term_link( $product ); ?>">See More...</a>
+                        <a href="<?php echo get_term_link( $product ); ?>" target="_self">See More...</a>
                     </p>
                 </li>
                 <?php endforeach; ?>
+            </ul>
         <?php endif; ?>
     </section>
 
@@ -35,7 +36,7 @@ get_header(); ?>
         <div class="click-me-div">
 
             <p>All our products are made fresh daily from locally-sourced ingredients. Our menu is updated frequently.</p>
-            <a href="<?php echo site_url(); ?>/products/" class="click-me-please">See Our Products</a>
+            <a href="<?php echo site_url(); ?>/products/" class="click-me-please" target="_self">See Our Products</a>
 
         </div>
     </section>
@@ -54,7 +55,7 @@ get_header(); ?>
                     <li class="news">
                         <div class="thumbnail-wrapper"><?php the_post_thumbnail( 'large' ); ?></div>
                         <div class="blog-info">
-                            <h3><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h3>
+                            <h3><a href="<?php the_permalink(); ?>" target="_self"><?php the_title(); ?></a></h3>
                             <p><?php the_date(get_option( 'date_format' )); ?> / <?php comments_number('0 Comments'); ?></p>
                         </div>
                     </li>

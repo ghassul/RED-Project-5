@@ -36,9 +36,17 @@
   }
 }
 
+h1 {
+  font-family: $font__accent;
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: 2.1rem;
+}
+
 .page-id-28, .blog, .tax-product-type,
 .single-product, .single-post, .search-results,
-.post-type-archive-testimonial, .error404 {
+.post-type-archive-testimonial, .error404,
+.date, .tag, .category {
 
   .site-content {
     width: 1024px;

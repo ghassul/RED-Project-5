@@ -23,18 +23,18 @@ get_header(); ?>
                     <div class="product-types">
                         <?php
                         $terms = get_terms("product-type");
-                        if ($terms) {?>
+                        if ($terms) : ?>
 
-                            <?php foreach($terms as $term) { ?>
+                            <?php foreach($terms as $term) : ?>
                                 <div class="product-type-block">
                                 <a href="<?php echo get_term_link( $term ); ?>">
                                     <img src="<?php echo get_template_directory_uri() ?>/assets/images/<?php echo $term->slug ?>.png"
                                          alt="<?php echo $term->slug ?>">
                                     <h3><?php echo $term->name ?></h3>
                                 </a>
-                                </div><?php
-                            }
-                        } ?>
+                                </div>
+                            <?php endforeach;
+                        endif; ?>
                     </div>
                 </header><!-- .page-header -->
 
