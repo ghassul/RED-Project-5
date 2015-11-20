@@ -43,15 +43,11 @@
 				</div>
 
 				<div class="copyright_container">
-					<p>Copyright &copy 2015 Le Red Bread</p>
+					<p>Copyright &copy; 2015 Le Red Bread</p>
 				</div>
 
 			</footer><!-- #colophon -->
 		</div><!-- #page -->
-
-
-
 		<?php wp_footer(); ?>
-
 	</body>
 </html>
