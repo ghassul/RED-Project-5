@@ -1420,13 +1420,13 @@ h1 {
       -ms-flex-wrap: wrap;
           flex-wrap: wrap; }
 
-.single-post p > input {
+.single-post p input {
   width: 100%;
   background-color: #fafafa;
   border: 1px solid #e1e1e1;
   padding: .5rem .3rem; }
 
-.single-post label {
+.single-post p label {
   color: grey;
   font-weight: bold; }
 

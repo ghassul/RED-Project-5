@@ -109,16 +109,18 @@
 
   }
 
-  p>input {
-    width: 100%;
-    background-color: #fafafa;
-    border: 1px solid #e1e1e1;
-    padding: .5rem .3rem;
-  }
+  p {
+    input {
+      width: 100%;
+      background-color: #fafafa;
+      border: 1px solid #e1e1e1;
+      padding: .5rem .3rem;
+    }
 
-  label {
-    color: grey;
-    font-weight: bold;
+    label {
+      color: grey;
+      font-weight: bold;
+    }
   }
 
   .required {
