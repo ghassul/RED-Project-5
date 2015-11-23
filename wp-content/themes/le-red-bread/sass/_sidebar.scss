@@ -13,13 +13,13 @@
     .info {
       display: flex;
       margin-bottom: .5rem;
+    }
 
-      i {
-        width: 20px;
-        margin-right: .5rem;
-        line-height: 1.6rem;
-        color: grey;
-      }
+    i {
+      width: 20px;
+      margin-right: .5rem;
+      line-height: 1.6rem;
+      color: grey;
     }
   }
 
@@ -27,11 +27,11 @@
     
     p {
       margin: 0 0 .5rem;
+    }
 
-      span {
-        font-weight: bold;
-        color: $color_red;
-      }
+    span {
+      font-weight: bold;
+      color: $color_red;
     }
   }
 

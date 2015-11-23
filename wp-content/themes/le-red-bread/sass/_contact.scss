@@ -1,86 +1,72 @@
 /* Contact Page */
 .page-id-28 {
 
-  article {
+  .entry-title {
+    text-transform: uppercase;
+    font-family: $font__accent;
+    font-size: 2.1rem;
+    margin: 0;
+  }
 
-    .entry-title {
-      text-transform: uppercase;
-      font-family: $font__accent;
-      font-size: 2.1rem;
-      margin: 0;
+  p {
+    margin: 0 0 1.5rem;
+  }
+
+  h2 {
+    font-size: 1.8rem;
+    color: grey;
+    font-family: $font__accent;
+  }
+
+  .wpcf7-form {
+    display: flex;
+    flex-wrap: wrap;
+
+    label {
+      color: grey;
+      font-weight: bold;
     }
+  }
 
-    .entry-content {
+  .star {
+    color: $color_red;
+  }
 
-      p {
-        margin: 0 0 1.5rem;
-      }
+  span > input {
+    width: 100%;
+    background-color: #fafafa;
+    border: 1px solid #e1e1e1;
+    padding: .5rem .3rem;
+  }
 
-      h2 {
-        font-size: 1.8rem;
-        color: grey;
-        font-family: $font__accent;
-      }
+  textarea {
+    background-color: #fafafa;
+    border: 1px solid #e1e1e1;
+  }
+  .name {
+    width: 49%;
+    margin-right: 1%;
+  }
 
-      .wpcf7 {
+  .email{
+    width: 49%;
+    margin-left: 1%;
+  }
 
-        form {
-          display: flex;
-          flex-wrap: wrap;
+  .subject, .message {
+    width: 100%;
+  }
 
-          label {
-            color: grey;
-            font-weight: bold;
-
-            .star {
-              color: $color_red;
-            }
-          }
-
-          span {
-            input {
-              width: 100%;
-              background-color: #fafafa;
-              border: 1px solid #e1e1e1;
-              padding: .5rem .3rem;
-            }
-          }
-
-          textarea {
-            background-color: #fafafa;
-            border: 1px solid #e1e1e1;
-          }
-          .name {
-            width: 49%;
-            margin-right: 1%;
-          }
-
-          .email{
-            width: 49%;
-            margin-left: 1%;
-          }
-
-          .subject, .message {
-            width: 100%;
-          }
-
-          .submit {
-
-            input {
-              font-size: 1rem;
-              font-weight: normal;
-              background-color: $color_brn;
-              text-decoration: none;
-              color: white;
-              padding: 0.75rem 1.5rem;
-              line-height: 1;
-              border: none;
-              border-radius: 3px;
-              box-shadow: none;
-            }
-          }
-        }
-      }
-    }
+  .submit > input {
+    font-size: 1rem;
+    font-weight: normal;
+    background-color: $color_brn;
+    text-decoration: none;
+    color: white;
+    padding: 0.75rem 1.5rem;
+    line-height: 1;
+    border: none;
+    border-radius: 3px;
+    box-shadow: none;
   }
 }

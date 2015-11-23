@@ -20,28 +20,27 @@
       justify-content: space-between;
       width: 75%;
       margin: 0 auto 3rem;
+    }
 
-      .product-type-block {
-        width: 22%;
+    .product-type-block {
+      width: 22%;
+    }
 
-        a {
-          text-align: center;
-          font-family: $font__accent;
-          color: black;
-          text-transform: uppercase;
+    a {
+      text-align: center;
+      font-family: $font__accent;
+      color: black;
+      text-transform: uppercase;
+    }
 
-          img {
-            width: 80%;
-            margin: 0 auto 1.5rem;
-            display: block;
-          }
+    img {
+      width: 80%;
+      margin: 0 auto 1.5rem;
+      display: block;
+    }
 
-          h3 {
-            margin: 0;
-          }
-        }
-
-      }
+    h3 {
+      margin: 0;
     }
   }
 
@@ -49,26 +48,26 @@
     display: flex;
     flex-wrap: wrap;
     margin-bottom: 1.5rem;
+  }
 
-    .grid-item {
-      width: 25%;
-      border: 1px solid #e1e1e1;
+  .grid-item {
+    width: 25%;
+    border: 1px solid #e1e1e1;
+  }
 
-      .item-info {
-        padding: .75rem 1rem;
-        display: flex;
-        justify-content: space-between;
+  .item-info {
+    padding: .75rem 1rem;
+    display: flex;
+    justify-content: space-between;
+  }
 
-        .entry-title {
-          padding-right: 0.25rem;
-        }
+  .entry-title {
+    padding-right: 0.25rem;
+  }
 
-        .filler {
-          flex: 0.5;
-          overflow: hidden;
-        }
-      }
-    }
+  .filler {
+    flex: 0.5;
+    overflow: hidden;
   }
 }
 
@@ -86,34 +85,31 @@
     }
   }
 
-  .products {
+  .product {
+    border-bottom: 1px dashed #d2d2d2;
+    padding-bottom: 1.5rem;
+    margin-bottom: 1.5rem;
+    display: flex;
+  }
 
-    .product {
-      border-bottom: 1px dashed #d2d2d2;
-      padding-bottom: 1.5rem;
-      margin-bottom: 1.5rem;
-      display: flex;
+  .item-info {
+    padding: 0 1.5rem;
+  }
 
-      .item-info {
-        padding: 0 1.5rem;
+  h2 {
+    margin: 0 0 1.5rem;
+    font-family: $font__accent;
+    color: $color_red;
+    font-size: 1.8rem;
+    line-height: 1;
+  }
 
-        h2 {
-          margin: 0 0 1.5rem;
-          font-family: $font__accent;
-          color: $color_red;
-          font-size: 1.8rem;
-          line-height: 1;
-        }
+  p {
+    margin: 0 0 1.5rem;
+  }
 
-        p {
-          margin: 0 0 1.5rem;
-        }
-
-        .price {
-          margin: 0;
-        }
-      }
-    }
+  .price {
+    margin: 0;
   }
 }
 
@@ -123,25 +119,19 @@
 
   article {
     margin: 0 0 4.5rem;
+  }
 
-    .entry-header {
+  h1 {
+    margin: 0;
+    text-transform: uppercase;
+    font-family: $font__accent;
+    font-size: 2.1rem;
+  }
 
-      h1 {
-        margin: 0;
-        text-transform: uppercase;
-        font-family: $font__accent;
-        font-size: 2.1rem;
-      }
-    }
-
-    .entry-content {
-
-      .price {
-        font-size: 1.5rem;
-        font-family: $font__accent;
-        font-weight: bold;
-        margin: 0.5rem 0 1.5rem;
-      }
-    }
+  .price {
+    font-size: 1.5rem;
+    font-family: $font__accent;
+    font-weight: bold;
+    margin: 0.5rem 0 1.5rem;
   }
 }

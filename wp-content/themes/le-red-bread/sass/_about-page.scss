@@ -5,45 +5,45 @@
   .about-header {
     text-align: center;
 
-    h1 {
-      font-size: 2.1rem;
-      margin: 0;
-    }
-
     p {
       margin: 0 0 3rem;
     }
   }
 
+  h1 {
+    font-size: 2.1rem;
+    margin: 0;
+  }
+
   .blurbs {
     display: flex;
     justify-content: space-between;
+  }
 
-    .blurb {
-      flex: 0 1 47.5%;
+  .blurb {
+    flex: 0 1 47.5%;
+  }
 
-      .blurb-title {
-        font-family: $font__accent;
-        font-size: 1.6rem;
-        color: $color_brn;
-        margin: 0;
-      }
+  .blurb-title {
+    font-family: $font__accent;
+    font-size: 1.6rem;
+    color: $color_brn;
+    margin: 0;
+  }
 
-      .blurb-subtitle {
-        margin-top: 0;
-        color: $color_ltgr;
-      }
-    }
+  .blurb-subtitle {
+    margin-top: 0;
+    color: $color_ltgr;
   }
 
   .our-story {
     margin-bottom: 4.5rem;
+  }
 
-    h2 {
-      font-family: $font__accent;
-      font-size: 1.8rem;
-      text-align: center;
-      margin: 1rem 0 2.25rem;
-    }
+  h2 {
+    font-family: $font__accent;
+    font-size: 1.8rem;
+    text-align: center;
+    margin: 1rem 0 2.25rem;
   }
 }
